@@ -9,16 +9,20 @@ body {
 
 main {
   display: flex;
+  /* Forces elements to the next line if they don't fit */
+  flex-wrap: wrap;
   margin-top: 2%;
 }
 
 .main-header {
   display: flex;
+  /* Forces elements to the next line if they don't fit */
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 60px;
   background: #13293d;
   color: #fff;
-} 
+}
 
 .card {
   flex: 1 0 0;
@@ -36,6 +40,5 @@ main {
 
 .card img {
   width: 100%;
-  /* The client insists that images be at least 400px */
   min-width: 400px;
 }
