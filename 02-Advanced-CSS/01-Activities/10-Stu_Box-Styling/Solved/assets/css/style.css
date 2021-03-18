@@ -71,7 +71,7 @@ footer {
   padding: 10px;
   flex: 0 0 300px;
   transform: rotate(8deg);
-  box-shadow: 0 0 60px rgba(235, 11, 11, 0.6);
+  box-shadow: 10px 10px 5px #aaaaaa;
   margin: 20px;
 }
 
