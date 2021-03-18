@@ -1,22 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
   <head>
-    <title>Responsive Web Design</title>
+    <title>Flexbox Alignment</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
   </head>
+
   <body>
-    <!-- Header -->
     <header>
       <h1>Welcome to the store!</h1>
-      <p>
-        When you change the screen size, the layout will change so you can view
-        the page comfortably no matter how small the screen gets!
-      </p>
     </header>
 
-    <!-- Navbar -->
     <nav>
       <a href="#">Camera</a>
       <a href="#">Tablet</a>
@@ -24,53 +20,31 @@
       <a href="#">Wooden Spoons</a>
     </nav>
 
-    <!-- Body -->
     <main>
-      <!-- Sidebar -->
-      <aside>
-        <h2>When you change the screen size...</h2>
-        <p>The navbar and this sidebar will be stacked on top of each other!</p>
-        <p>
-          And the product cards will wrap around as the screen gets smaller.
-        </p>
-      </aside>
-      <!-- Product Cards -->
-      <div class="products">
-        <section class="card">
-          <header>Camera</header>
-          <img src="./assets/images/camera.jpg" alt="black camera" />
+      <section class="product">
+        <div class="product-slideshow">
+          <button>&lt;</button>
+          <!-- Wrap the image in a div to avoid weird flexbox behavior -->
+          <div>
+            <img class="product-image" src="./assets/images/camera.jpg" alt="camera" />
+          </div>
+          <button>&gt;</button>
+        </div>
+        <div class="product-details">
+          <h2>Camera Product Page</h2>
+          <p>The slideshow buttons on the left won't work until we add JavaScript to the page, but we can at least set up the proper alignment with CSS.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime tempore sunt culpa dicta iure ipsa aperiam impedit tenetur optio temporibus, nostrum aliquam rerum voluptate! Blanditiis sit ipsam praesentium esse facilis!</p>
           <p>Price: $300</p>
-        </section>
-        <section class="card">
-          <header>Tablet</header>
-          <img src="./assets/images/tablet.jpg" alt="tablet held in hands" />
-          <p>Price: $150</p>
-        </section>
-        <section class="card">
-          <header>Toilet Paper</header>
-          <img
-            src="./assets/images/toilet-paper.jpg"
-            alt="rolls of toilet paper in a basket"
-          />
-          <p>Price: $30</p>
-        </section>
-        <section class="card">
-          <header>Wooden Spoons</header>
-          <img
-            src="./assets/images/wooden-spoons.jpg"
-            alt="4 wooden spoons with different seasonings"
-          />
-          <p>Price: $10</p>
-        </section>
-      </div>
+          <p>
+            <button>Buy Now</button>
+          </p>
+        </div>
+      </section>
     </main>
 
-    <!-- Footer -->
     <footer>
-      <h3>
-        Open Chrome DevTools --> Toggle device toolbar --> Resize the browser
-        window!
-      </h3>
+      Remember to use your DevTools!
     </footer>
   </body>
+
 </html>
