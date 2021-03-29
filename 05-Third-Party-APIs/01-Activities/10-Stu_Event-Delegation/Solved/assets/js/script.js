@@ -31,7 +31,7 @@ function handleFormSubmit(event) {
 function handleRemoveItem(event) {
   // convert button we pressed (`event.target`) to a jQuery DOM object
   var btnClicked = $(event.target);
-
+  console.log(btnClicked);
   // get the parent `<li>` element from the button we pressed and remove it
   btnClicked.parent('li').remove();
 }
