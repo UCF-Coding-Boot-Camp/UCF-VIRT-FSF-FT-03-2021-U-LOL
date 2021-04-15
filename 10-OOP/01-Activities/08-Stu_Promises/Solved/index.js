@@ -23,16 +23,15 @@ const studentDistracted = userInput !== 'coding';
 //     resolve('We are coding!');
 //   });
 
-// Option 2 - commment out to try the new one 
-  const practiceCoding = new Promise((resolve, reject) => {
-    if (studentDistracted) {
-      reject(new Error('Coding stopped - Student is distracted'));
-    }
-    resolve('We are coding!');
-  })
+// uncomment if using Option 1
+// practiceCoding()
+//   .then(() => console.log('We are coding in promises!'))
+//   .catch((err) => console.error('Promise rejected:', err));
+
 
 
 // Refactor to call 'practiceCoding()' and chain a 'then()' and 'catch()'
+// Comment out if using option 2
 practiceCoding
   .then(() => console.log('We are coding in promises!'))
   .catch((err) => console.error('Promise rejected:', err));
