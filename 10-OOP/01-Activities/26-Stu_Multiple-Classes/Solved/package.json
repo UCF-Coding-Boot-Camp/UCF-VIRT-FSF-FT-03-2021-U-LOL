@@ -1,14 +1,18 @@
 {
-  "name": "07-stu_first-mock",
+  "name": "solved",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
+    "start": "node index.js",
     "test": "jest"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^24.9.0"
+    "jest": "^24.8.0"
   }
 }
