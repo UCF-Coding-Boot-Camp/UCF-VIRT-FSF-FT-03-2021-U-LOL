@@ -8,6 +8,18 @@ router.get('/', async (req, res) => {
     res.json(err);
   });
   res.json(userData);
+
+  // Uncomment to try
+  // -----------------
+  try {
+    const userData = await User.findAll();
+    res.status(200).json(userData);
+  } catch (err) {
+    // 400 status code means the server could not understand the request
+    res.status(400).json(err);
+  }
+
+
 });
 
 // This route uses async/await with try/catch for errors
